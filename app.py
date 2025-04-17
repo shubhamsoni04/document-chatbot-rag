@@ -69,13 +69,12 @@ def main():
     st.title("Document Chatbot using RAGs - Harsh Tripathi and Shubham Soni")
 
     with st.expander("Instructions to upload Text PDF/URL"):
-        st.write("1. Pull up the side bar in top left corner.")
-        st.write("2. If uploading a PDF, click 'Upload PDF', select your file, and wait for 'Documents Loaded' confirmation.")
-        st.write("3. If entering a web URL, enter the URL, click 'Enter Web URL', and submit 'Process URL' and wait for 'Documents Loaded from URL' confirmation.")
-        st.write("4. After loading documents, click 'Create Vector Store' to process.Documents can only be uploaded once per session")
-        st.write("5. Enter a question in the text area and submit to interact with the AI chatbot.")
-        st.write("6. Click on Generate Chat Summary to get the conversation of the Chat Session.")
-        st.write("Visit https://aravind-llama3groqchatbot.streamlit.app/ if you want to use the generic chatbot.")
+        st.write("1. Open the sidebar by clicking the menu icon in the top-left corner.")
+        st.write("2. If you're uploading a PDF, click 'Upload PDF', choose your file, and wait until you see the 'Documents Loaded' message.")
+        st.write("3. If you're using a web URL, type it in, click 'Enter Web URL', then hit 'Process URL' and wait for the 'Documents Loaded from URL' confirmation.")
+        st.write("4. Once the documents are loaded, click 'Create Vector Store' to begin processing. Note that documents can only be uploaded once per session.")
+        st.write("5. Type your question into the text box and click submit to start interacting with the AI chatbot.")
+        st.write("6. Click 'Generate Chat Summary' to view a summary of the entire chat session.")
 
     st.sidebar.subheader("Choose document source:")
     input_choice = st.sidebar.radio("Select one:", ("Upload PDF", "Enter Web URL"))
